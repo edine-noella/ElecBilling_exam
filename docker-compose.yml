@@ -2,11 +2,11 @@ version: '3.8'
 
 services:
   client:
-    image: "gahamanyi/frontend"
+    image: "gahamanyi/frontend:latest"
     mem_limit: 128m
     hostname: frontend
   server:
-    image: "gahamanyi/backend"
+    image: "gahamanyi/backend:latest"
     mem_limit: 128m
     hostname: backend
   nginx:
