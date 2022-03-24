@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  client:
+    image: "gahamanyi/frontend"
+    mem_limit: 128m
+    hostname: backend
+  server:
+    image: "gahamanyi/backend"
+    mem_limit: 128m
+    hostname: backend
+  nginx:
+    image: "gahamanyi/nginx"
+    mem_limit: 128m
+    hostname: nginx
+    ports:
+      - "80:80"
