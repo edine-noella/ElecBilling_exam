@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - exam
+      
 jobs:
   push_to_registry:
     name: push to docker hub
