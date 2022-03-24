@@ -14,18 +14,12 @@
     "seed": "ts-node --compiler-options '{\"module\": \"CommonJS\"}"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/veritem/tdd-nodejs.git"
+    "type": "git"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/veritem/tdd-nodejs/issues"
-  },
-  "homepage": "https://github.com/veritem/tdd-nodejs#readme",
   "dependencies": {
-    "@prisma/client": "^3.8.1",
+    "@prisma/client": "^3.11.0",
     "@types/cors": "^2.8.12",
     "cors": "^2.8.5",
     "express": "^4.17.2"
@@ -41,6 +35,7 @@
     "jest-mock-extended": "^2.0.4",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
+    "prisma": "^3.11.0",
     "supertest": "^6.2.1",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
