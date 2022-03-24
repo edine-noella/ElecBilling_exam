@@ -1,8 +1,7 @@
 name: push
 on:
   push:
-    branches:
-      - exam
+    branches:[exam]
       
 jobs:
   push_to_registry:
