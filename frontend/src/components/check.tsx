@@ -1,12 +1,12 @@
 import { Fragment, useState } from "react";
 import { toast } from "react-hot-toast";
-import {Token} from "@prisma/client"
+// import {Token} from "@prisma/client"
 
 export default function Check() {
   const [meterId, setMeterId] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const [meter, setMeter] = useState<Token | undefined>();
+  // const [meter, setMeter] = useState<Token | undefined>();
 
 
   function getDays(date: string){
@@ -44,7 +44,7 @@ export default function Check() {
 
           setSubmitted(true);
 
-          setMeter(data);
+          // setMeter(data);
         }}
       >
         <input
@@ -62,7 +62,7 @@ export default function Check() {
       </form>
 
       <section>
-        {(meter && getDays(meter.expiresAt) !== 0) && (
+        {/* {(meter && getDays(meter.expiresAt) !== 0) && (
           <div className="my-6 bg-emerald-700 px-3 py-4 rounded-sm text-white w-[30rem]">
             <p className="flex justify-between py-4 px-2">
               <span>Token</span> <span>{meter?.token}</span>
@@ -80,11 +80,11 @@ export default function Check() {
 
         {(meter && getDays(meter.expiresAt)== 0) && <div className="bg-pink-700 my-4 w-[30rem] text-white py-4 text-center">
           <p>Token have expired</p>
-        </div>}
+        </div>} */}
       </section>
 
       <section>
-        {submitted && !meter && <div>No token found for this meter</div>}
+        {/* {submitted && !meter && <div>No token found for this meter</div>} */}
       </section>
     </Fragment>
   );
